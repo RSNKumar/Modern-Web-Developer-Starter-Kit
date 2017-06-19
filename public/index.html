@@ -1,30 +1,88 @@
 <html>
 
 <head>
-      <title>CodingPhase Web Developer Starter Kit</title>
-      <link rel="stylesheet" href="/css/main.css">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
-      <h1>This is awesome 3rd change</h1>
-      <ul id="myList">
-      </ul>
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+              <div class="cover-container">
+                    <div class="masthead clearfix animated fadeInDown">
+                          <div class="inner">
+                                <div style="float: left;">
+                                      <h3 class="masthead-brand">Dashboard</h3>
+                                      <p class="text-muted" style="margin:0px; padding: 0px;">dashboard for all apps</p>
 
-      <div id="app">
-            <input type="text" v-on:input="changeTitle" /> {{title}} {{users}} {{sayHello()}}
+                                      <div class="dropdown" style="margin-top: 20px;">
+                                            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                  Naveen Kumar M
+                                                  <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                  <li><a href="#">Profile</a></li>
+                                                  <li><a href="#">Manage role</a></li>
+                                                  <li><a href="#">Permissions</a></li>
+                                                  <li role="separator" class="divider"></li>
+                                                  <li><a href="#">Logout</a></li>
+                                            </ul>
+                                      </div>
+                                </div>
+                          </div>
+                    </div>
 
+                    <div class="inner cover animated fadeInUp">
+                          <div class="row">
+                                <div class="col-lg-4">
+                                      <img src="imgs/image_icon-128.png" alt="" class="img-rounded" style="width: 128px; height: 128px; border: 2px dashed #d9d9d9">
+                                      <h4 class="masthead-brand" style="margin-top: 16px;">IRS Portal</h4>
+                                      <p class="text-muted" style="margin:0px; padding: 0px;">dashboard for all apps</p>
+                                </div>
+                                <div class="col-lg-4">
+                                      <img src="imgs/image_icon-128.png" alt="" class="img-rounded" style="width: 128px; height: 128px; border: 2px dashed #d9d9d9">
+                                      <h4 class="masthead-brand" style="margin-top: 16px;">Traser Lab</h4>
+                                      <p class="text-muted" style="margin:0px; padding: 0px;">dashboard for all apps</p>
+                                </div>
+                                <div class="col-lg-4">
+                                      <img src="imgs/image_icon-128.png" alt="" class="img-rounded" style="width: 128px; height: 128px; border: 2px dashed #d9d9d9">
+                                      <h4 class="masthead-brand" style="margin-top: 16px;">Vechical gatepass</h4>
+                                      <p class="text-muted" style="margin:0px; padding: 0px;">dashboard for all apps</p>
+                                </div>
+                          </div>
 
-            <a v-bind:href="link">Google</a>
+                          <div class="row" style="text-align: ; margin-top: 40px;">
+                                <div class="col-lg-4">
+                                      <img src="imgs/image_icon-128.png" alt="" class="img-rounded" style="width: 128px; height: 128px; border: 2px dashed #d9d9d9">
+                                      <h4 class="masthead-brand" style="margin-top: 16px;">Infocom</h4>
+                                      <p class="text-muted" style="margin:0px; padding: 0px;">dashboard for all apps</p>
+                                </div>
+                                <div class="col-lg-4">
+                                      <img src="imgs/image_icon-128.png" alt="" class="img-rounded" style="width: 128px; height: 128px; border: 2px dashed #d9d9d9">
+                                      <h4 class="masthead-brand" style="margin-top: 16px;">WEB ICE</h4>
+                                      <p class="text-muted" style="margin:0px; padding: 0px;">dashboard for all apps</p>
+                                </div>
+                                <div class="col-lg-4">
+                                      <img src="imgs/image_icon-128.png" alt="" class="img-rounded" style="width: 128px; height: 128px; border: 2px dashed #d9d9d9">
+                                      <h4 class="masthead-brand" style="margin-top: 16px;">ONGC Reports</h4>
+                                      <p class="text-muted" style="margin:0px; padding: 0px;">dashboard for all apps</p>
+                                </div>
+                          </div>
+                    </div>
 
-            <div>
-                  {{counter}}
-                  <p v-on:mousemove="updateCoordinates">Coordinates: {{x}} / {{y}}</p>
-                  <button v-on:click="increase(2, $event)">Click</button>
-            </div>
-      </div>
+                    <div class="mastfoot">
+                          <div class="inner">
+                                <p>All rights reserved <a href="http://www.ongc.co.in">ONGC India</a>.</p>
+                          </div>
+                    </div>
+              </div>
+        </div>
+    </div>
 
-      <script src="/js/vue.js"></script>
-      <script src="/js/all.js"></script>
+    <script src="js/jquery/dist/jquery.min.js" charset="utf-8"></script>
+    <script src="css/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
 </body>
 
 </html>
